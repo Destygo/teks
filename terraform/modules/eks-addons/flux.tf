@@ -38,7 +38,7 @@ resource "kubernetes_role" "flux" {
   }
 
   rule {
-    api_groups = ["", "batch", "extensions", "apps"]
+    api_groups = ["", "batch", "extensions", "apps", "monitoring.coreos.com"]
     resources  = ["*"]
     verbs      = ["*"]
   }
